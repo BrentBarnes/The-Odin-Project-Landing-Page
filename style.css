@@ -1,0 +1,403 @@
+:root {
+
+    /* colors */
+
+    --light:        #fff;
+    --light-header: #F9FAF8;
+    --grey:         #E5E7EB;
+    --dark:         #1F2937;
+    --accent-blue:  #3882F6;
+
+    /* typography */
+
+    --ff:           'Roboto', sans-serif;
+
+    --fs-regular:   1.125rem;
+    --fs-medium:    1.5rem;
+    --fs-large:     2.25rem;
+    --fs-xlarge:    3rem;
+
+    --fw-light:     300;
+    --fw-regular:   400;
+    --fw-bold:      700;
+    --fw-black:     900;
+
+    --f-italic:     italic;
+}
+
+
+/* =================
+  Table of Contents
+================== */
+
+/*  
+    
+    1. Global Styles
+
+    2. Typography
+
+    3. Layout
+
+    4. Components
+        a. Tier-1 Components
+        b. Tier-2 Components
+        c. Tier-3 Components
+        d. Tier-4 Components
+
+*/
+
+/* ==============
+  Global Styles
+============== */
+
+.container {
+    padding: 1.5em;
+}
+
+/* ==============
+    Typography
+================= */
+
+.nav__logo {
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-black);
+    color: var(--light-header);
+}
+
+.nav--right-links {
+    padding: 0em 1em;
+    font-weight: var(--fw-light);
+    font-size: var(--fs-regular);
+    color: var(--grey);
+    display: flex;
+    text-align: center;
+}
+
+ul {
+    padding: .75em;
+    margin: 0px;
+}
+
+@media (min-width: 500px) {
+    ul {
+       padding: 0em .5em;
+    }
+}
+
+@media (min-width: 700px) {
+    ul {
+       padding: 0em 1.5em;
+    }
+}
+
+.tier-1__hero {
+    color: var(--light-header);
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-black);
+    margin: 0em;
+    padding-top: 1em;
+}
+
+@media (min-width: 612px){
+    .tier-1__hero {
+        font-size: var(--fs-xlarge);
+    }
+}
+
+.tier-1__p {
+    color: var(--grey);
+    font-size: var(--fs-regular)
+}
+
+.tier-2__title {
+    text-align: center;
+    font-size: var(--fs-large);
+    font-weight: var(--fw-black);
+}
+
+.container--tier-3 {
+    background-color: var(--grey);
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-light);
+    text-align: center;
+    font-style: italic;
+}
+
+.tier-3__quote p2 {
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-bold);
+    text-align: center;
+    margin-top: .5em;
+}
+
+@media (min-width: 700px) {
+    .container--tier-3 {
+        font-size: var(--fs-large);
+        text-align: left;
+    }
+
+    .tier-3__quote p2 {
+        font-size: var(--fs-medium);
+        margin-right: 15px;
+        align-self: flex-end;
+    }
+}
+
+.tier-4__content {
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+@media (min-width: 700px) {
+    .tier-4__content {
+        text-align: left;
+        max-width: 23rem;
+    }
+}
+
+.tier-4__bold {
+    color: var(--grey);
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-bold);
+}
+
+.tier-4__regular {
+    color: var(--light-header);
+    margin: 0px;
+}
+
+/* ==============
+      Layout
+================= */
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--ff);
+}
+
+nav {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 1.5em 1.5em 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 500px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container--tier-1 {
+    background-color: var(--dark);
+    color: var(--light-header);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 500px) {
+    .container--tier-1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tier-1--image {
+        order: 1;
+    }
+}
+
+@media (min-width: 700px) {
+    .container--tier-1 {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: space-around;  
+    }
+}
+
+.container--tier-2 {
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container--tier-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container--tier-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 50px;
+    background-color: var(--dark);
+    color: var(--grey);
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==============
+    Components
+================= */
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~ Tier-1 Components ~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.tier-1--content {
+
+    order: 1;
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+    .tier-1--content{
+        padding-right: 2em;
+        text-align: left;
+    }
+}
+
+@media (min-width: 700px) {
+    .tier-1--content {
+        max-width: 25em;
+    }
+}
+
+.tier-1--image {
+    padding: 5em 3em;
+    background-color: grey;
+}
+
+
+.tier-1__button {
+    color: var(--grey);
+    background-color: var(--accent-blue);
+    padding: .75em;
+    border-radius: .75em;
+    border: none;
+    font-weight: var(--fw-bold);
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~ Tier-2 Components ~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.tier-2__card-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tier-2__card {
+    max-width: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 1.3rem
+}
+
+@media (max-width: 432px) {
+    .tier-2__card {
+        padding: 0em 0em;
+    }
+}
+
+@media (min-width: 606px) {
+    .tier-2__card {
+        padding: 0em 4em;
+    }
+}
+
+@media (min-width: 816px) {
+    .tier-2__card {
+        padding: 0em 1.3em;
+    }
+}
+
+.tier-2__illustration {
+    border: solid 3px var(--accent-blue);
+    border-radius: 10px;
+    min-width: 8.75em;
+    min-height: 8.75em;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~ Tier-3 Components ~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.tier-3__quote {
+    display: flex;
+    flex-direction: column;
+}
+
+.tier-3__quote p {
+    max-width: 780px;
+    margin: 0px;
+    word-wrap: normal;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~ Tier-4 Components ~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.tier-4__box {
+    background-color: var(--accent-blue);
+    max-width: 70%;
+    min-height: 125px;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (min-width: 700px) {
+    .tier-4__box {
+        flex-direction: row;
+        padding: 1.5em 4em;
+    }
+}
+
+
+.tier-4__box button {
+    color: var(--light-header);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-regular);
+    background-color: transparent;
+    padding: .75em 1.25em;
+    border: 2px solid var(--light-header);
+}
