@@ -24,7 +24,7 @@ The goal of this project was to clone a CSS design given a folder of a few asset
     </figure>
     <figure>
         <figcaption>Responsive Media Queries 2</figcaption>
-        <img src="zoom2.png" alt="Zoomed view 1" width="400" height="500">
+        <img src="zoom_02.png" alt="Zoomed view 1" width="400" height="500">
     </figure>
     <figure>
         <figcaption>Responsive Media Queries 3</figcaption>
