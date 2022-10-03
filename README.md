@@ -16,18 +16,18 @@ The goal of this project was to clone a CSS design given a folder of a few asset
 <p float = 'left' >
     <figure>
         <figcaption>Full Page</figcaption>
-        <img src="Full.png" alt="Full page" width="600" height="500">
+        <img src="Full.png" alt="Full page" width="600" height="400">
     </figure>
     <figure>
         <figcaption>Responsive Media Queries 1</figcaption>
-        <img src="zoom1.png" alt="Zoomed view 1" width="600" height="500">
+        <img src="zoom1.png" alt="Zoomed view 1" width="400" height="500">
     </figure>
     <figure>
         <figcaption>Responsive Media Queries 2</figcaption>
-        <img src="zoom2.png" alt="Zoomed view 1" width="600" height="500">
+        <img src="zoom2.png" alt="Zoomed view 1" width="400" height="500">
     </figure>
     <figure>
         <figcaption>Responsive Media Queries 3</figcaption>
-        <img src="zoom3.png" alt="Zoomed view 1" width="600" height="500">
+        <img src="zoom3.png" alt="Zoomed view 1" width="400" height="500">
     </figure>
 </p>
